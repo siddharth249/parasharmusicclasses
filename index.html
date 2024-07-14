@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parashar Music Classes</title>
+    <script>
+
+        // Example: Form validation (basic)
+document.querySelector('form').addEventListener('submit', function(event) {
+    let name = document.querySelector('#name').value;
+    let email = document.querySelector('#email').value;
+    let message = document.querySelector('#message').value;
+
+    if (!name || !email || !message) {
+        alert('All fields are required!');
+        event.preventDefault();
+    }
+});
+    </script>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Parashar Music Classes</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#classes">Classes</a></li>
+                <li><a href="#instructors">Instructors</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to Parashar Music Classes</h2>
+        <p>Your journey to mastering music starts here.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We offer a variety of music classes for all ages and skill levels.</p>
+    </section>
+
+    <section id="classes">
+        <h2>Our Classes</h2>
+        <p>Explore our range of music classes, including piano, guitar, and vocal training.</p>
+    </section>
+
+    <section id="instructors">
+        <h2>Meet Our Instructors</h2>
+        <p>Our experienced instructors are here to guide you every step of the way.</p>
+    </section>
+
+    <section id="testimonials">
+        <h2>Testimonials</h2>
+        <p>Hear from our satisfied students and parents.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Parashar Music Classes. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
